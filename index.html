@@ -37,11 +37,58 @@
     <![endif] />
 
     <!-- Js File_________________________________ -->
-    <script src="./JS/theme.js"></script>
     <script src="./JS/map-script.js"></script>
     <!-- j Query -->
 
     <style>
+      /* for partner logo sllide */
+
+      .partners-section {
+  overflow: hidden;
+  background: #fff;  /* Adjust background color as needed */
+  padding: 20px 0;
+}
+
+#partner-logo {
+  display: flex;
+  animation: scroll 30s linear infinite;  /* Adjust duration as needed */
+  width: fit-content;
+}
+
+/* Create a duplicate of items for seamless loop */
+#partner-logo {
+  display: flex;
+}
+
+#partner-logo .item {
+  flex-shrink: 0;
+  padding: 0 20px;  /* Adjust spacing between logos */
+}
+
+#partner-logo .item img {
+  max-width: 150px;  /* Adjust size as needed */
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Adjust this value based on the total width of your logos */
+    transform: translateX(-100%);
+  }
+}
+
+/* Optional: Pause animation on hover */
+#partner-logo:hover {
+  animation-play-state: paused;
+}
+
+
+
+
+
 		/* the carousel effect / hero section */
 		* {
     margin: 0;
@@ -1054,26 +1101,26 @@ nav.scrolled .logo img {
       <!-- Camera Slider -->
       <script
         type="text/javascript"
-        src="vendor/Camera-master/scripts/jquery.mobile.customized.min.js"
+        src="./vendor/Camera-master/scripts/jquery.mobile.customized.min.js"
       ></script>
       <script
         type="text/javascript"
-        src="vendor/Camera-master/scripts/jquery.easing.1.3.js"
+        src="./vendor/Camera-master/scripts/jquery.easing.1.3.js"
       ></script>
       <script
         type="text/javascript"
-        src="vendor/Camera-master/scripts/camera.min.js"
+        src="./vendor/Camera-master/scripts/camera.min.js"
       ></script>
 
       <!-- WOW js -->
       <script
         type="text/javascript"
-        src="vendor/WOW-master/dist/wow.min.js"
+        src="./vendor/WOW-master/dist/wow.min.js"
       ></script>
       <!-- owl.carousel -->
       <script
         type="text/javascript"
-        src="vendor/owl-carousel/owl.carousel.min.js"
+        src="./vendor/owl-carousel/owl.carousel.min.js"
       ></script>
 
       <!-- Theme js -->

@@ -551,7 +551,8 @@ nav.theme-main-menu {
 .theme-main-menu.fixed .transparent-menu {
   background: rgba(0,0,0,0.8);
 }
-
+.theme-main-menu.fixed .transparent-menu.bg-color-two {
+}
 .theme-main-menu.fixed .main-container {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -1036,7 +1037,7 @@ form.theme-form-one .input-form-wrapper button {
   Client Slider
 ====================================================================
 
- ***/
+***/
 .client-slider .fa-quote-left {
   display: block;
   text-align: center;
